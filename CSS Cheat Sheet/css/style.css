@@ -1,0 +1,199 @@
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+
+body{
+	background-color: #f4f4f4; /* sets background-color to light gray */
+	color: #555555; /*sets text-color to Dark gray */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px; /* sets the size of fonts */
+	font-weight: normal; /* sets boldness */
+	/* solid dotted dashed doubled couple others*/
+	font: normal 16px Arial,sans-serif;
+	line-height: 1.6em; /* its the space b/w lines */
+	margin: 0; /* margin is spacing around an element(body) */
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color:red;
+}
+a:active{
+	color: green;
+}
+a:visited{
+	
+}
+.container{
+	width: 80%; /* sets width of an element */
+	margin: auto; 
+}
+.button{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+}
+.button:hover{
+	background: blue;
+	color: black;
+}
+.clr{
+	clear: both;
+}
+.box-1{
+	background-color: #333; /* sets the background-color */
+	color: #fff; /* sets the text color*/
+	 /*border of an element(top,bottom,left,right)*/
+	border-right: 5px red solid;
+	border-left: 5px red solid;
+	border-top: 5px red solid;
+	border-bottom: 5px red solid;
+	border: 5px red solid;
+	/*width of border for all sides */
+	border-width: 3px;
+	/* width of border only for bottom side */
+	border-bottom-width: 10px;
+	/* solid dotted dashed doubled couple others*/
+	border-top-style: dotted;
+	/* shorthand method for border(type,color,style) */
+	border: 5px red solid;
+	/* padding is space b/w the element and border */
+	/* sets padding to 20px from top,bottom,left,right */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/* same as above in shorthand method*/
+	padding: 20px;
+	margin-top: 20px;
+	margin:20px 0;
+}
+
+.box-1 h1{
+	font-family: fantasy; /*sets the font to fantasy */
+	font-weight: 800; /* bolds the font */
+	font-style: italic;/* sets the font style to italic */
+	text-decoration: underline;/* set the text decoration to underline */
+	text-transform: uppercase; /*text is transformed to uppercase */
+	letter-spacing: 0.2em;/* space b/w letters */
+	word-spacing: 1em; /* space b/w words */
+}
+
+.box-2{
+	border: 3px dotted #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.categories{
+	border: 1px #ccc solid;
+	padding: 10px;
+	border-radius: 15px; /* it gives rounded corners */
+}
+
+.categories h2{
+	text-align: center; /* aligns to text to center */
+}
+
+.categories ul{
+	padding: 0;
+	padding-left: 20px;
+	list-style: square; /* changes the buttle to square */
+	list-style: none; /* removes the bullet points */
+}
+
+.categories li{
+	padding-bottom: 6px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url('../images/check.png');
+}
+
+.my-form{
+	padding: 20px;
+}
+/* you can add nested class from an element and style them together*/
+.my-form .form-group{
+	padding-bottom: 15px;
+}
+/* styling label element nested inside .my-form */
+.my-form label{
+	display: block;
+}
+/* styling input element specifically the inputs 
+who contain text and textarea */
+.my-form input[type="text"], .my-form textarea{
+	padding: 8px;
+	width: 100%;
+}
+.block{
+	float: left; /*floats an element to left */
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box; /* sizes the content in the box */
+}
+/* using #id to style */
+#main-block{
+	float: left;
+	width: 70%;
+}
+#sidebar{
+	float: right;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.p-box{
+	width: 800px;
+	height: 500px;
+	border: 1px solid black;
+	margin-top: 30px;
+	position: relative;
+	/* positioned relative to its normal state */
+	background-image: url('../bgimage.jpg');
+	background-position: 100px 200px;
+	background-repeat: no-repeat;
+	background-position:center top;
+
+}
+/* postion of p-box is inside of an relative element */
+.p-box h1{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+
+.p-box h2{
+	position: absolute;
+	bottom: 40px;
+	right: 100px;
+	
+}
+/* postion of an element gets fixed */
+.fix-me{
+	position: fixed;
+	top:400px;
+}
+/*targets the first child(first element in list)*/
+.my-list li:first-child{ 
+	background:red;
+}
+/*targets the last element in list */
+.my-list li:last-child{
+	background:blue;
+}
+/*targets the 5th element in list specified by () */
+.my-list li:nth-child(5){ 
+	background: yellow;
+}
+/* targets the even elements in list */
+.my-list li:nth-child(even){
+	background: green;
+
+}
